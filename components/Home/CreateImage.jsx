@@ -8,9 +8,20 @@ const CreateImage = () => {
   const [enteredName, setEnteredName] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
 
-  const shareToCommunityHandler = (e) => {
+  const shareToCommunityHandler = async (e) => {
     //send req to backend to first store the image in the cloudinary and then
     // store the imageUrl and the userName in the MongoDB database
+    const response = await fetch('api/share_community',{
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+            name: enteredName,
+            prompt: writtenPrompt,
+            photo:imageSource
+        })
+    })
+    const responseData = await response.json()
+    console.log('save to community triggered');
   };
   const promptChangeHandler = (e) => {
     const randomIndex = Math.floor(Math.random() * surpriseMePrompts.length);

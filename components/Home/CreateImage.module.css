@@ -1,0 +1,45 @@
+.container{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem 4rem;
+    background: white;
+    color: black;
+
+}
+
+.formContainer{
+    min-width: 30rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.formPromptContainer{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0.8rem 0.1rem;
+}
+.btn{
+    padding: 0.4rem 0.5rem;
+    background: #525454;
+    border: none;
+    font-weight: bold;
+    border-radius: 0.3rem;
+    width: max-content;
+}
+.imageContainer{
+    width: 15rem;
+    height: 15rem;
+    margin: 1rem 0rem;
+}
+.imageContainer img{
+    width: 100%;
+    height: 100%;
+}
+
+.formSeparator{
+    margin-top: 4rem;
+}

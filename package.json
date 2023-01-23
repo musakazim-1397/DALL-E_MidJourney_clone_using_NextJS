@@ -10,10 +10,14 @@
   },
   "dependencies": {
     "@next/font": "13.1.4",
+    "cloudinary": "^1.33.0",
     "eslint": "8.32.0",
     "eslint-config-next": "13.1.4",
+    "mongoose": "^6.8.4",
     "next": "13.1.4",
+    "openai": "^3.1.0",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "save-file": "^2.3.1"
   }
 }

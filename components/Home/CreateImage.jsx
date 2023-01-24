@@ -83,7 +83,7 @@ const CreateImage = () => {
               borderRadius: "0.4rem",
               background: "transparent",
             }}
-            value={surpriseMePrompt && surpriseMePrompt}
+            value={writtenPrompt || surpriseMePrompt && surpriseMePrompt}
           />
           <button
             type="submit"
